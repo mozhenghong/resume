@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简历重做</title>
+    <link rel="stylesheet" href="./style.css">
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+    <script src="//at.alicdn.com/t/font_881110_jvtnhf19xm.js"></script>
+</head>
+<body>
+    <div class="topnavbar">
+        <div class="topnavbar-in clearfix">
+        <div class="logo">
+            <a href="#" class="rs">RS</a>
+            <a href="#" class="card">card</a>
+        </div>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="#">关于</a></li>
+                <li><a href="#">技能</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其它</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="background"><div class="background-in"></div></div>
+<div class="card1">
+<div class="card-top clearfix">
+    <div class="picture"><img src="./img/avatar.jpg" alt="avatar"></div>
+    <div class="text">
+        <span class="welcome">hello</span><span class="shape"></span>
+        <h1>莫正红</h1>
+        <p>前端工程师</p>
+        <hr>
+        <dl class="clearfix">
+            <dt>年龄</dt>
+            <dd>24</dd>
+            <dt>所在城市</dt>
+            <dd>杭州</dd>
+            <dt>邮箱</dt>
+            <dd>1445207382@qq.com</dd>
+            <dt>电话</dt>
+            <dd>18765294051</dd>
+        </dl>
+    </div>
+</div>
+    <footer>
+        <a href="#">
+                <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo1"></use>
+                    </svg>
+        </a>
+        <a href="#">
+                <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+        </a>
+        <a href="#">
+                <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+        </a>
+    </footer>
+</div>
+<p class="downloadout"><a class="download" href="#" download target="_blank">下载PDF简历</a>
+<p class="introduction">莫正红， 前端工程师。 <br>
+        技能：前端开发，Rails 开发，Node.js 开发</p>
+<section class="skills">
+    <h2>个人技能</h2>
+<ol class="clearfix">
+    <li><h3>Html/css</h3><div class="progressbar">
+        <div class="progress" style="width:70%"></div>
+    </div></li>
+    <li><h3>javascript</h3><div class="progressbar">
+            <div class="progress" style="width:60%"></div>
+        </div></li>
+    <li><h3>jquery</h3><div class="progressbar">
+            <div class="progress" style="width:40%"></div>
+        </div></li>
+    <li><h3>vue</h3><div class="progressbar">
+            <div class="progress" style="width:30%"></div>
+        </div></li>
+    <li><h3>react</h3><div class="progressbar">
+            <div class="progress" style="width:20%"></div>
+        </div></li>
+    <li><h3>node.js</h3><div class="progressbar">
+            <div class="progress" style="width:50%"></div>
+        </div></li>
+</ol>
+</section>
+<section class="portfolio">
+    <h2>作品集</h2>
+    <nav>
+  <ol class="clearfix">
+        <li id="portfolio1">所有</li>
+        <li id="portfolio2">框架</li>
+        <li id="portfolio3">原生js</li>
+    </ol>
+    </nav>
+    <div id="portfoliobar"class="bar state-1">
+            <div class="progress"></div>
+        </div>
+        <script>
+            portfolio1.onclick= function(){
+                portfoliobar.className = 'bar state-1'
+            }  
+            portfolio2.onclick= function(){
+                portfoliobar.className = 'bar state-2'
+            }
+            portfolio3.onclick= function(){
+                portfoliobar.className = 'bar state-3'
+            }
+        </script>
+        <div class="work">
+            <div class="big"><img src="./img/1.jpg" alt="1" style="width:606px;height:576px"></div>
+            <div class="small1"><img src="./img/2.jpg" alt="2" style="width:293px;height:273px"></div>
+            <div class="small2"><img src="./img/3.jpg" alt="3" style="width:293px;height:273px"></div>
+        </div>
+</section>
+</body>
+</html>
