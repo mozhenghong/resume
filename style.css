@@ -19,11 +19,60 @@ ul,ol{
 ul li{
   float:left;
 }
+.siteWelcome.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  z-index:1;
+}
+.siteWelcome.active>.loading::before,.siteWelcome.active>.loading::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+  animation: loading linear 1s infinite;
+  background: #000;
+  width:0;
+  height: 0;
+  border-radius: 50%;
+}
+.siteWelcome.active>.loading::after{
+  animation-delay: 0.75s;
+}
+@keyframes loading{
+  0%{
+    width:0;
+    height: 0;
+    opacity:0.6;
+  }
+  100%{
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
 .topnavbar{
   position:fixed;
   top:0;
   left:0;
   width:100%;
+}
+.topnavbar.sticky{
+  background: #fff;
+  box-shadow: 0 0 7px rgba(0,0,0,0.7);
+}
+.topnavbar.sticky>.topnavbar-in{
+  margin:16px 10px 0 17px;
 }
 .topnavbar .topnavbar-in{
   margin:24px 10px 0 17px;
@@ -33,7 +82,7 @@ ul li{
   
 }
 .topnavbar .nav{
-  float:right;.card1.card-top .text 
+  float:right;
   padding:9px 0;
 }
 .topnavbar .logo .rs{
@@ -49,16 +98,58 @@ ul li{
   font-size:12px;
   font-weight:bold;
 }
-.topnavbar .nav a{
+.topnavbar .nav li{
   margin:0 17px;
-  padding:5px 0;
-  border-bottom:3px solid transparent;
+  position: relative;
+ } 
+ .topnavbar .nav a{
   color:#B7B7B7;
+  
+ } 
+ .topnavbar .nav li  a::after{
+  content:'';
+  display: block;
+  margin-top: 5px;
+  height:3px;
+  background:transparent;
 }
-.topnavbar .nav a:hover{
-  margin:0 17px;
-  padding:5px 0;.card1.card-top .text 
-  border-bottom:3px solid #E06567; 
+.topnavbar .nav li:hover  a::after{
+  content:'';
+  display: block;
+  margin-top:5px;
+  height:3px;
+  background:#E06567;
+  animation: b 0.3s linear ;
+}
+@keyframes b {
+  0%{
+    width: 0px;
+  }
+ 100%{
+    width: 100%;
+  }
+}
+.submenu{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  color: #3d4451;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  white-space: nowrap;
+  display: none;
+  animation: s 0.5s linear;
+}
+.active>.submenu{
+  display: block;
+}
+.submenu>li{
+  padding:5px 0;
+  font-weight: normal;
+}
+@keyframes s{
+  0%{right: 100%}
+  100%{right: 0;}
 }
 .background{
   background:url(./img/background.jpg) center center;
