@@ -15,6 +15,7 @@
         }
     </style>
     <script src="//at.alicdn.com/t/font_881110_jvtnhf19xm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
     <script src="./main.js"></script>
 </head>
 <body>
@@ -29,17 +30,8 @@
         </div>
         <div class="nav" >
             <ul class="clearfix">
-                <li><a href="#siteNav">关于</a></li>
+                <li><a href="#siteCard">关于</a></li>
                 <li><a href="#skills">技能</a></li>
-                <li>
-                    <a href="#siteNav">博客</a>
-                    <ul class="submenu">
-                        <li>博客1</li>
-                        <li>博客2</li>
-                        <li>博客3</li>
-                        <li>博客4</li>
-                    </ul>
-                </li>
                 <li>
                     <a href="#portfolio">作品</a>
                     <ul class="submenu">
@@ -48,15 +40,24 @@
                             <li>作品3</li>
                     </ul>
                 </li>
-                <li><a href="#siteNav">日历</a></li>
-                <li><a href="#siteNav">联系方式</a></li>
-                <li><a href="#siteNav">其它</a></li>
+                <li>
+                    <a href="#">博客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                        <li>博客4</li>
+                    </ul>
+                </li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其它</a></li>
             </ul>
         </div>
         </div>
     </div>
 <div class="background"><div class="background-in"></div></div>
-<div class="card1">
+<div class="card1 data-x" id="siteCard">
 <div class="card-top clearfix">
     <div class="picture"><img src="./img/avatar.jpg" alt="avatar"></div>
     <div class="text">
@@ -97,7 +98,7 @@
 <p class="downloadout"><a class="download" href="#" download target="_blank">下载PDF简历</a>
 <p class="introduction">莫正红， 前端工程师。 <br>
         技能：前端开发，Rails 开发，Node.js 开发</p>
-<section class="skills" id="skills">
+<section class="skills data-x" id="skills">
     <h2>个人技能</h2>
 <ol class="clearfix">
     <li><h3>Html/css</h3><div class="progressbar">
@@ -120,7 +121,7 @@
         </div></li>
 </ol>
 </section>
-<section class="portfolio" id="portfolio">
+<section class="portfolio data-x" id="portfolio">
     <h2>作品集</h2>
     <nav>
   <ol class="clearfix">

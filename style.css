@@ -113,7 +113,7 @@ ul li{
   height:3px;
   background:transparent;
 }
-.topnavbar .nav li:hover  a::after{
+.topnavbar .nav li:hover  a::after, .topnavbar .nav .highlight  a::after{
   content:'';
   display: block;
   margin-top:5px;
