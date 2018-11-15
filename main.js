@@ -14,9 +14,9 @@ window.onscroll = function(){
         siteNav.classList.remove('sticky')
     }
 }
-//二级菜单
 
 window.onload = function(){
+    //二级菜单
     let liTags  =  document.querySelectorAll('.nav>ul>li')
     for(let i=0;i<liTags.length;i++){
         liTags[i].onmouseenter = function(x){
@@ -26,10 +26,8 @@ window.onload = function(){
             x.currentTarget.classList.remove('active')
         }
     }
-}
 
-//自动滚动到想要的位置
-window.onload = function(){
+    //自动滚动到想要的位置
     let aTags = document.querySelectorAll('.nav>ul>li>a')
     for(let i=0;i<aTags.length;i++){
         aTags[i].onclick = function(x){
