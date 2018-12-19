@@ -1,3 +1,4 @@
+
 //设置2秒后停止加载画面
 window.setTimeout(
     function(){
@@ -6,6 +7,19 @@ window.setTimeout(
 )
 
 window.onload = function(){
+    //轮播
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    })
+
+
     //二级菜单
     let liTags  =  document.querySelectorAll('.nav>ul>li')
     for(let i=0;i<liTags.length;i++){

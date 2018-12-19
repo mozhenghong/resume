@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
     <link rel="stylesheet" href="./style.css">
-    <style type="text/css">
-        .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
-        }
-    </style>
     <script src="//at.alicdn.com/t/font_881110_jvtnhf19xm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
     <script src="./main.js"></script>
 </head>
 <body>
@@ -123,31 +117,24 @@
 </section>
 <section class="portfolio data-x" id="portfolio">
     <h2>作品集</h2>
-    <nav>
-  <ol class="clearfix">
-        <li id="portfolio1">所有</li>
-        <li id="portfolio2">框架</li>
-        <li id="portfolio3">原生js</li>
-    </ol>
-    </nav>
-    <div id="portfoliobar"class="bar state-1">
-            <div class="progress"></div>
-        </div>
-        <script>
-            portfolio1.onclick= function(){
-                portfoliobar.className = 'bar state-1'
-            }  
-            portfolio2.onclick= function(){
-                portfoliobar.className = 'bar state-2'
-            }
-            portfolio3.onclick= function(){
-                portfoliobar.className = 'bar state-3'
-            }
-        </script>
+
         <div class="work">
-            <div class="big"><img src="./img/1.jpg" alt="1" style="width:606px;height:576px"></div>
-            <div class="small1"><img src="./img/2.jpg" alt="2" style="width:293px;height:273px"></div>
-            <div class="small2"><img src="./img/3.jpg" alt="3" style="width:293px;height:273px"></div>
+                    <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img class="swiper-slide" src="./img/slides-image/nav.jpg">
+                    <img class="swiper-slide" src="./img/slides-image/canvas.jpg">
+                    <img class="swiper-slide" src="./img/slides-image/slides.jpg">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination">
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
 </section>
 </body>

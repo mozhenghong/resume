@@ -2,6 +2,18 @@
   margin:0;
   padding:0;
 }
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.swiper-container {
+  width: 668px;
+  height: 501px;
+  z-index: 0;
+}
+
 body{
   background:#EFEFEF;
 }
@@ -306,81 +318,14 @@ footer a:hover{
   width:50%;
   border-radius:2px;
 }
-.portfolio nav{
-text-align:center;
-}
-.portfolio nav ol{
-display:inline-block;
-vertical-align:top;
-}
+
 .portfolio h2{
   text-align:center;
   margin-bottom:20px;
 }
-.portfolio li{
-  /* border:1px solid red; */
-  padding-left:20px;
-  float:left;
-  cursor:pointer;
-}
-.portfolio li:first-child{
-  padding-left:0px;
-}
-.portfolio .bar{
-  /* border:1px solid red; */
-height:5px;
-background:white;
-width:150px;
-border-radius:2px;
-margin:10px auto;
-}
-.portfolio .progress{
-height:100%;
-width:35px;
-background:#E6686A;
-border-radius:2px;
-transition:all 0.3s;
-}
-.portfolio .bar.state-1 .progress{
-height:100%;
-background:#E6686A;
-border-radius:2px;
-margin-left:0;
-width:35px;
-}
-.portfolio .bar.state-2 .progress{
-  height:100%;
-  background:#E6686A;
-  border-radius:2px;
-  margin-left:50px;
-  width:40px;
-  }
-  .portfolio .bar.state-3 .progress{
-    height:100%;
-    background:#E6686A;
-    border-radius:2px;
-    margin-left:100px;
-    width:50px;
-    }
+
 .work{
   width:941px;
   /* border:1px solid red; */
   margin:0 auto;
-  position:relative;
-}
-.work .big{
-  position:absolute;
-  left:0px;
-  top:0px;
-}
-.work .small1{
-  position:absolute;
-  top:0px;
-  left:646px;
-  
-}
-.work .small2{
-  position:absolute;
-  top:300px;
-  left:646px;
 }
