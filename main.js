@@ -11,15 +11,17 @@ window.onload = function(){
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
         pagination: {
-        el: '.swiper-pagination',
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
         },
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     })
-
-
     //二级菜单
     let liTags  =  document.querySelectorAll('.nav>ul>li')
     for(let i=0;i<liTags.length;i++){
@@ -66,7 +68,6 @@ window.onload = function(){
     
         // 添加 offset 类
     let specialTags = document.querySelectorAll('.data-x')
-    console.log('1',specialTags)
     for(let i =0;i<specialTags.length; i++){
     specialTags[i].classList.add('offset')
     }

@@ -8,11 +8,6 @@
   fill: currentColor;
   overflow: hidden;
 }
-.swiper-container {
-  width: 668px;
-  height: 501px;
-  z-index: 0;
-}
 
 body{
   background:#EFEFEF;
@@ -78,6 +73,7 @@ ul li{
   top:0;
   left:0;
   width:100%;
+  z-index: 2;
 }
 .topnavbar.sticky{
   background: #fff;
@@ -234,7 +230,9 @@ footer a{
   border-radius:50%;
   padding:5px 0;
   margin:16px;
-  display:inline-block;
+  display:inline-block;For example, with this code, we can add slide number into pagination bullet:
+
+
 }
 footer a:hover{
   width:40px;
@@ -328,4 +326,40 @@ footer a:hover{
   width:941px;
   /* border:1px solid red; */
   margin:0 auto;
+}
+.swiper-container{
+  width: 668px;
+  height: 501px;
+}
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.messages{
+  max-width:650px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:40px;
+}
+.messages> h2{
+  text-align:center;
+  font-weight:normal;
+}
+.messages> ol{
+  background-color:rgb(230, 238, 238);
+  max-height: 500px;
+  overflow: hidden;
+}
+.messages> ol>li{
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+}
+.messages> form{
+  text-align:center;
+}
+.messages  label{
+  margin: 20px;
 }

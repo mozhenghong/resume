@@ -10,7 +10,12 @@
     <script src="//at.alicdn.com/t/font_881110_jvtnhf19xm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/js/swiper.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 存储服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
+    <!-- 实时消息服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.2.1/dist/realtime.browser.min.js"></script>
+        
 </head>
 <body>
     <div class="siteWelcome active" id="siteWelcome">
@@ -124,9 +129,9 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <img class="swiper-slide" src="./img/slides-image/nav.jpg">
-                    <img class="swiper-slide" src="./img/slides-image/canvas.jpg">
-                    <img class="swiper-slide" src="./img/slides-image/slides.jpg">
+                    <img class="swiper-slide" id="nav" src="./img/slides-image/nav.jpg">
+                    <img class="swiper-slide" id="canvas" src="./img/slides-image/canvas.jpg">
+                    <img class="swiper-slide" id="slides" src="./img/slides-image/slides.jpg">
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination">
@@ -137,5 +142,16 @@
             </div>
         </div>
 </section>
+<section class="messages">
+    <h2>留言</h2>
+    <ol id="messageList"></ol>
+    <form id="postMessageForm">
+        <label for="">姓名: <input type="text" name="name"></label>
+        <label for="">留言: <input type="text" name="message"></label>
+        <input type="submit" name="submit">
+    </form>
+</section>
+<script src="./main.js"></script>
+<script src="./leancloud.js"></script>
 </body>
 </html>
