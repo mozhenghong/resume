@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,143 +16,174 @@
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
     <!-- 实时消息服务 -->
     <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.2.1/dist/realtime.browser.min.js"></script>
-        
+
 </head>
+
 <body>
     <div class="siteWelcome active" id="siteWelcome">
         <div class="loading"></div>
     </div>
     <div class="topnavbar" id="siteNav">
         <div class="topnavbar-in clearfix">
-        <div class="logo">
-            <a href="#" class="rs">RS</a>
-            <a href="#" class="card">card</a>
-        </div>
-        <div class="nav" >
-            <ul class="clearfix">
-                <li><a href="#siteCard">关于</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li>
-                    <a href="#portfolio">作品</a>
-                    <ul class="submenu">
+            <div class="logo">
+                <a href="#" class="rs">MZH</a>
+                <a href="#" class="card">card</a>
+            </div>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a href="#siteCard">关于</a></li>
+                    <li><a href="#skills">技能</a></li>
+                    <li>
+                        <a href="#portfolio">作品</a>
+                        <ul class="submenu">
                             <li>作品1</li>
                             <li>作品2</li>
                             <li>作品3</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">博客</a>
-                    <ul class="submenu">
-                        <li>博客1</li>
-                        <li>博客2</li>
-                        <li>博客3</li>
-                        <li>博客4</li>
-                    </ul>
-                </li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其它</a></li>
-            </ul>
-        </div>
-        </div>
-    </div>
-<div class="background"><div class="background-in"></div></div>
-<div class="card1 data-x" id="siteCard">
-<div class="card-top clearfix">
-    <div class="picture"><img src="./img/avatar.jpg" alt="avatar"></div>
-    <div class="text">
-        <span class="welcome">hello</span><span class="shape"></span>
-        <h1>莫正红</h1>
-        <p>前端工程师</p>
-        <hr>
-        <dl class="clearfix">
-            <dt>年龄</dt>
-            <dd>24</dd>
-            <dt>所在城市</dt>
-            <dd>杭州</dd>
-            <dt>邮箱</dt>
-            <dd>1445207382@qq.com</dd>
-            <dt>电话</dt>
-            <dd>18765294051</dd>
-        </dl>
-    </div>
-</div>
-    <footer>
-        <a href="#">
-                <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weibo1"></use>
-                    </svg>
-        </a>
-        <a href="#">
-                <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-twitter"></use>
-                    </svg>
-        </a>
-        <a href="#">
-                <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-github"></use>
-                    </svg>
-        </a>
-    </footer>
-</div>
-<p class="downloadout"><a class="download" href="#" download target="_blank">下载PDF简历</a>
-<p class="introduction">莫正红， 前端工程师。 <br>
-        技能：前端开发，Rails 开发，Node.js 开发</p>
-<section class="skills data-x" id="skills">
-    <h2>个人技能</h2>
-<ol class="clearfix">
-    <li><h3>Html/css</h3><div class="progressbar">
-        <div class="progress" style="width:70%"></div>
-    </div></li>
-    <li><h3>javascript</h3><div class="progressbar">
-            <div class="progress" style="width:60%"></div>
-        </div></li>
-    <li><h3>jquery</h3><div class="progressbar">
-            <div class="progress" style="width:40%"></div>
-        </div></li>
-    <li><h3>vue</h3><div class="progressbar">
-            <div class="progress" style="width:30%"></div>
-        </div></li>
-    <li><h3>react</h3><div class="progressbar">
-            <div class="progress" style="width:20%"></div>
-        </div></li>
-    <li><h3>node.js</h3><div class="progressbar">
-            <div class="progress" style="width:50%"></div>
-        </div></li>
-</ol>
-</section>
-<section class="portfolio data-x" id="portfolio">
-    <h2>作品集</h2>
-
-        <div class="work">
-                    <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <img class="swiper-slide" id="nav" src="./img/slides-image/nav.jpg">
-                    <img class="swiper-slide" id="canvas" src="./img/slides-image/canvas.jpg">
-                    <img class="swiper-slide" id="slides" src="./img/slides-image/slides.jpg">
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination">
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">博客</a>
+                        <ul class="submenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                            <li>博客4</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其它</a></li>
+                </ul>
             </div>
         </div>
-</section>
-<section class="messages">
-    <h2>留言</h2>
-    <ol id="messageList"></ol>
-    <form id="postMessageForm">
-        <label for="">姓名: <input type="text" name="name"></label>
-        <label for="">留言: <input type="text" name="message"></label>
-        <input type="submit" name="submit">
-    </form>
-</section>
-<script src="./main.js"></script>
-<script src="./leancloud.js"></script>
+    </div>
+    <div class="background">
+        <div class="background-in"></div>
+    </div>
+    <div class="card1 data-x" id="siteCard">
+        <div class="card-top clearfix">
+            <div class="picture"><img src="./img/avatar.jpg" alt="avatar"></div>
+            <div class="text">
+                <span class="welcome">hello,我来应聘前端工程师啦</span><span class="shape"></span>
+                <h1>莫正红</h1>
+                <p>前端工程师</p>
+                <hr>
+                <dl class="clearfix">
+                    <dt>年龄</dt>
+                    <dd>24</dd>
+                    <dt>所在城市</dt>
+                    <dd>杭州</dd>
+                    <dt>邮箱</dt>
+                    <dd>1445207382@qq.com</dd>
+                    <dt>电话</dt>
+                    <dd>18765294051</dd>
+                </dl>
+            </div>
+        </div>
+        <footer>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo1"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+    <p class="downloadout"><a class="download" href="#" download target="_blank">下载PDF简历</a>
+        <p class="introduction">莫正红， 前端工程师。 <br>
+            技能：前端开发，Rails 开发，Node.js 开发</p>
+        <section class="skills data-x" id="skills">
+            <h2>个人技能</h2>
+            <ol class="clearfix">
+                <li>
+                    <h3>Html/css</h3>
+                    <div class="progressbar">
+                        <div class="progress" style="width:70%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>javascript</h3>
+                    <div class="progressbar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>jquery</h3>
+                    <div class="progressbar">
+                        <div class="progress" style="width:40%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>vue</h3>
+                    <div class="progressbar">
+                        <div class="progress" style="width:30%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>react</h3>
+                    <div class="progressbar">
+                        <div class="progress" style="width:20%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>node.js</h3>
+                    <div class="progressbar">
+                        <div class="progress" style="width:50%"></div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>作品集</h2>
+
+            <div class="work">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <img class="swiper-slide" id="nav" src="./img/slides-image/nav.jpg">
+                        <img class="swiper-slide" id="canvas" src="./img/slides-image/canvas.jpg">
+                        <img class="swiper-slide" id="slides" src="./img/slides-image/slides.jpg">
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination">
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="messages">
+            <h2>留言</h2>
+            <div class="message-container">
+                <ol id="messageList"></ol>
+            </div>
+            <form id="postMessageForm">
+                <label for="">姓名: <input type="text" name="name" placeholder="姓名"></label>
+                <label for="">留言: <input type="text" name="message"　placeholder= "留言"></label>
+                <input type="submit" name="submit" class = "submit">
+            </form>
+        </section>
+        <script src="./main.js"></script>
+        <script src="./leancloud.js"></script>
+        <script>
+            window.onerror = function(message,file,row){
+                console.log(message)
+                console.log(file)
+                console.log(row)
+            }
+        </script>
 </body>
+
 </html>
