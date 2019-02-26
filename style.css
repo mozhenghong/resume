@@ -136,7 +136,7 @@ ul li {
     color: #B7B7B7;
 }
 
-.topnavbar .nav li a::after {
+.topnavbar>.topnavbar-in>.nav>ul>li>a::after {
     content: '';
     display: block;
     margin-top: 5px;
@@ -144,8 +144,8 @@ ul li {
     background: transparent;
 }
 
-.topnavbar .nav li:hover a::after,
-.topnavbar .nav .highlight a::after {
+.topnavbar>.topnavbar-in>.nav>ul>li:hover>a::after,
+.topnavbar>.topnavbar-in>.nav>ul>.highlight>a::after {
     content: '';
     display: block;
     margin-top: 5px;
@@ -206,9 +206,9 @@ ul li {
 
 .card1 {
     max-width: 941px;
-    down background: #FFFFdownFF;
+    background: #FFFFFF;
     margin: 0 auto;
-    down margin-top: -400pdownx;
+    margin-top: -400pdownx;
 }
 
 .card1 .card-top {
@@ -297,6 +297,7 @@ footer a:hover {
 }
 
 .downloadout {
+    margin-top: 30px;
     text-align: center;
 }
 

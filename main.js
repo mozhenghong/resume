@@ -68,6 +68,7 @@ window.onload = function () {
 
     // 添加 offset 类
     let specialTags = document.querySelectorAll('.data-x')
+    console.log(specialTags)
     for (let i = 0; i < specialTags.length; i++) {
         specialTags[i].classList.add('offset')
     }
